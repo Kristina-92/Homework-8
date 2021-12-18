@@ -1,0 +1,389 @@
+.rectangle {
+    width: 800px;
+    height: 300px;
+    border: solid black;
+ }
+ 
+ /* Container 1 */
+ 
+ .container1 {
+    width: 400px;
+    height: 150px;
+    background: rgb(212, 38, 38);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+
+ .box1 {
+    width: 200px;
+    height: 45px;
+    background: rgb(238, 71, 71);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+ .loadingbar1 {
+    width: 200px;
+    height: 40px;
+ }
+
+ .text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+ }
+
+ @keyframes loading {
+
+    0% {
+      width: 5%;
+      border-top: 4px solid white;
+      border-bottom: 4px solid white;
+      opacity: 1;
+    }
+
+    50% {
+      width: 50%;
+      border-top: 4px solid white;
+      border-bottom: 4px solid white;
+      opacity: 1;
+    }
+
+    75% {
+      width: 85%;
+      border-top: 4px solid white;
+      border-bottom: 4px solid white;
+      opacity: 1;
+    }
+
+    90% {
+      width: 100%;
+      border-top: 4px solid white;
+      border-bottom: 4px solid white;
+      opacity: 1;
+    }
+
+    95% {
+      width: 100%; 
+      border-top: 4px solid white;
+      border-bottom: 4px solid white; 
+      opacity: 0.5;
+    }
+
+    99% {
+      width: 100%; 
+      border-top: 4px solid white;
+      border-bottom: 4px solid white; 
+      opacity: 0.3;
+    }
+
+    100% {
+      width: 100%;
+      border-top: 3px solid white;
+      border-bottom: 3px solid white;
+      opacity: 0;
+    }
+  }
+
+.rectangle:hover .loadingbar1 {
+    animation-name: loading;
+    animation-duration: 9s;
+    animation-timing-function: linear ;
+    animation-delay: 1s;
+    animation-iteration-count: infinite; 
+ }
+
+ /* Container 2 */
+
+ .container2 {
+    width: 400px;
+    height: 150px;
+    background: rgba(224, 44, 44, 0.959);
+    position: absolute;
+    top: 11px; 
+    left: 411px;
+}
+
+.box2 {
+    width: 200px;
+    height: 45px;
+    background: rgb(238, 71, 71);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loadingbar2 {
+    width: 200px;
+    height: 45px;
+}
+
+.text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+}
+
+@keyframes loading2 {
+
+  0% {
+    width: 5%;
+    background: white;
+  }
+
+  50% {
+    width: 50%;
+    background: white;
+    
+  }
+
+  75% {
+    width: 85%;
+    background: white;
+    opacity: 1;
+  }
+
+  90% {
+    width: 100%;
+    background: white;
+    opacity: 1;
+  }
+
+  95% {
+    width: 100%; 
+    background: white;
+    opacity: 0.9;
+  }
+
+  99% {
+    width: 100%; 
+    background: white; 
+    opacity: 0.5;
+  }
+
+  100% {
+    width: 100%;
+    background: white;
+    opacity: 0;
+  }
+}
+
+.rectangle:hover .loadingbar2 {
+    animation-name: loading2;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite; 
+}
+
+/* Container 3 */
+
+ .container3 {
+    width: 400px;
+    height: 150px;
+    background: rgba(224, 44, 44, 0.959);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box3 {
+    width: 75px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.527);
+    display: inline-block;
+    margin: 5px;
+}
+
+.ball2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: white;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+.ball3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.527);
+    display: inline-block;
+    margin: 5px;
+}
+
+@keyframes movebox3 {
+
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+  50% {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+    
+  100% {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+  }
+
+.rectangle:hover .box3 {
+    animation-name: movebox3;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite; 
+}
+
+/* Container 4 */
+
+.container4 {
+    width: 400px;
+    height: 150px;
+    background: rgb(212, 38, 38);
+    position: absolute;
+    top: 161px; 
+    left: 411px;
+}
+
+.ball4 {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 22%;
+    left: 40%; 
+}
+
+.box4 {
+    width: 60px;
+    height: 60px;
+    background: rgb(238, 71, 71);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loadingbar3 {
+    width: 60px;
+    height: 60px;
+ }
+
+@keyframes loading4 {
+
+  0% {
+    width: 5%;
+    background: white;
+  }
+
+  50% {
+    width: 50%;
+    background: white;
+    
+  }
+
+  75% {
+    width: 85%;
+    background: white;
+    opacity: 1;
+  }
+
+  90% {
+    width: 100%;
+    background: white;
+    opacity: 0.8;
+  }
+  
+  95% {
+    width: 100%; 
+    background: white;
+    opacity: 0.5;
+  }
+
+  99% {
+    width: 100%; 
+    background: white; 
+    opacity: 0.3;
+  }
+
+  100% {
+    width: 100%;
+    background: white;
+    opacity: 0;
+  }
+}
+
+.rectangle:hover .loadingbar3 {
+    animation-name: loading4;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball4move {
+
+  0% {
+    top: 22%;
+    left: 40%; 
+  }
+
+  25% {
+    top: 22%;
+    left: 58%;
+  }
+
+  50% {
+    top: 70%;
+    left: 58%;
+  }
+
+  75% {
+    top: 70%;
+    left: 40%;
+  }
+
+  100% {
+    top: 22%;
+    left: 40%;
+  }
+}
+
+.rectangle:hover .ball4 {
+    animation-name: ball4move;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
